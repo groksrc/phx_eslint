@@ -9,7 +9,8 @@ module.exports = {
     node: true
   },
   extends: [
-    'eslint:recommended'
+    'eslint:recommended',
+    'plugin:vue/recommended'
   ],
   rules: {
     'array-bracket-spacing': ['error', 'never', { arraysInArrays: false, objectsInArrays: false }],
@@ -66,5 +67,9 @@ module.exports = {
     'require-await': 'error',
     'semi': ['error', 'never'],
     'yoda': 'error'
-  }
+  },
+  plugins: [
+    'vue',
+    'chai-friendly'
+  ]
 }
